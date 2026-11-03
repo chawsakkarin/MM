@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Conflict Workshop App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 
+            [CONFLICT POINT 1: HTML] 
+            ให้ Student A เปลี่ยน <h1> เป็น: <h1>🚀 Pro Dev Dashboard</h1>
+            ให้ Student B เปลี่ยน <h1> เป็น: <h1>⚡ Agile Workspace 2026</h1>
+        -->
+        <header>
+            <h1 id="app-title">Git Workshop App</h1>
+            <p id="app-desc">ระบบจัดการงานสำหรับการฝึก Git Collaboration</p>
+        </header>
+
+        <section class="card">
+            <h2>รายการงานประจำวัน</h2>
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="พิมพ์ชื่อ Task ที่นี่...">
+                <button id="add-btn">เพิ่ม Task</button>
+            </div>
+            <ul id="task-list">
+                <!-- 
+                    [CONFLICT POINT 2: HTML] 
+                    ให้ Student A เพิ่ม <li> ต่อท้าย: <li>ทำความสะอาด Code Base</li>
+                    ให้ Student B เพิ่ม <li> ต่อท้าย: <li>เขียน Unit Test</li>
+                -->
+                <li>ทบทวน Pull Request</li>
+                <li>ประชุม Team Standup</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
