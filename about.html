@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา - Git Workshop App</title>
+    <!-- ใช้ไฟล์ CSS ร่วมกับหน้า index.html -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- เมนู Navigation สำหรับลิงก์ข้ามหน้า -->
+        <nav class="nav-bar">
+            <a href="index.html">หน้าแรก (Tasks)</a>
+            <a href="about.html" class="active">เกี่ยวกับเรา</a>
+        </nav>
+
+        <header>
+            <h1>เกี่ยวกับโปรเจกต์นี้</h1>
+            <p>หน้าเสริมสำหรับทดสอบระบบ Navigation และการแก้ไฟล์ร่วมกัน</p>
+        </header>
+
+        <section class="card">
+            <h2>รายละเอียดทีมพัฒนา</h2>
+            
+            <!-- 
+                [CONFLICT POINT 7: HTML (about.html)]
+                ให้ Student A เพิ่มข้อมูลตัวเอง: <p class="author">ผู้พัฒนา: Student A (Frontend Lead)</p>
+                ให้ Student B เพิ่มข้อมูลตัวเอง: <p class="author">ผู้พัฒนา: Student B (DevOps Specialist)</p>
+            -->
+            <p class="author">ผู้พัฒนา: ทีมเรียนรู้ Git Workshop</p>
+
+            <article class="info-box">
+                <h3>วัตถุประสงค์</h3>
+                <p>โปรเจกต์นี้สร้างขึ้นเพื่อเรียนรู้ขั้นตอนการทำงานร่วมกันด้วย Git ทั้งการสร้าง Branch, การทำ Pull Request และการแก้ Merge Conflict ในชีวิตจริง</p>
+            </article>
+
+            <div style="margin-top: 20px;">
+                <a href="index.html" class="btn-link">← กลับไปหน้าหลัก</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
